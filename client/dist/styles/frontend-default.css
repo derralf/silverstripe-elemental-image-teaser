@@ -1,0 +1,92 @@
+/* ==========================================================================
+   derralf/elemental-image-teaser
+   ========================================================================== */
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card {
+  background: #FFF;
+  position: relative;
+  border: 1px solid #eeeeee;
+  margin-bottom: 30px; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.grey {
+    background: #eeeeee;
+    border: 0; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary {
+    background: #337ab7;
+    border-color: #337ab7;
+    border-width: 0; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary a,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-header,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-footer,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-title,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-blockquote,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-link,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-text,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-subtitle,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-blockquote .blockquote-footer {
+      color: #FFF; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .card-text a {
+      text-decoration: underline; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary .btn {
+      background: #FFF;
+      border-color: #FFF;
+      color: #337ab7;
+      text-decoration: none; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark {
+    background: #286090;
+    border-color: #286090;
+    border-width: 0; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark a,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-header,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-footer,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-title,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-blockquote,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-link,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-text,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-subtitle,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-blockquote .blockquote-footer {
+      color: #FFF; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .card-text a {
+      text-decoration: underline; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.primary-dark .btn {
+      background: #FFF;
+      border-color: #FFF;
+      color: #286090;
+      text-decoration: none; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary {
+    background: #5cb85c;
+    border-color: #5cb85c;
+    border-width: 0; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary a,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-header,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-footer,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-title,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-blockquote,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-link,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-text,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-subtitle,
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-blockquote .blockquote-footer {
+      color: #FFF; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .card-text a {
+      text-decoration: underline; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.secondary .btn {
+      background: #FFF;
+      border-color: #FFF;
+      color: #5cb85c;
+      text-decoration: none; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.white-no-border {
+    border-width: 0; }
+    .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.white-no-border .card-block {
+      padding-left: 0;
+      padding-right: 0;
+      padding-bottom: 0; }
+
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card-title {
+  margin-bottom: 10px;
+  -webkit-hyphens: auto;
+      -ms-hyphens: auto;
+          hyphens: auto; }
+
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card-block {
+  padding: 30px; }

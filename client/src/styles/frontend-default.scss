@@ -1,0 +1,109 @@
+/* ==========================================================================
+   derralf/elemental-image-teaser
+   ========================================================================== */
+
+
+// some variables.
+// you may comment or change them when using this scss file in your workflow
+
+$gray-base:              #000 !default;
+$gray-darker:            lighten($gray-base, 13.5%) !default; // #222
+$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+$gray:                   lighten($gray-base, 33.5%) !default; // #555
+$gray-light:             lighten($gray-base, 46.7%) !default; // #777
+$gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
+
+$brand-primary:         darken(#428bca, 6.5%) !default;
+$brand-success:         #5cb85c !default;
+$brand-info:            #5bc0de !default;
+$brand-warning:         #f0ad4e !default;
+$brand-danger:          #d9534f !default;
+
+$brand-primary-dark:    darken(#428bca, 16.5%) !default;
+
+$font-size-base:          14px !default;
+$line-height-base:        1.428571429 !default; // 20/14
+$line-height-computed:    floor(($font-size-base * $line-height-base)) !default; // ~20px
+
+$grid-gutter-width:         30px !default;
+
+// $screen-md:                  992px !default;
+// $screen-md-min:              $screen-md !default;
+// $screen-sm-max:              ($screen-md-min - 1) !default;
+
+
+@mixin image-teaser-card-variant($background: $gray, $border-color: $gray-lighter, $border-width: 0, $color: #FFF) {
+    background: $background;
+    border-color: $border-color;
+    border-width: $border-width;
+
+    &,
+    a,
+    .card-header,
+    .card-footer,
+    .card-title,
+    .card-blockquote,
+    .card-link,
+    .card-text,
+    .card-subtitle,
+    .card-blockquote .blockquote-footer {
+        color: $color;
+    }
+    .card-text a {
+        text-decoration: underline;
+    }
+
+    .btn {
+        background: $color;
+        border-color: $color;
+        color: $background;
+        text-decoration: none;
+    }
+}
+
+
+// baut auf der nachgebildeten .card-Klasse auf, die mit Bootstrap 4 kommt
+// siehe _theme_base.scss
+.derralf__elements__imageteaser__element__elementimageteaserholder {
+    .teaser-list {
+        .card {
+            background: #FFF;
+            position: relative;
+            border: 1px solid $gray-lighter;
+            margin-bottom: $grid-gutter-width;
+
+            // Color variants, uses Mixin above
+            &.grey {
+                background: $gray-lighter;
+                border: 0;
+            }
+            &.primary {
+                @include image-teaser-card-variant($brand-primary, $brand-primary, 0);
+            }
+            &.primary-dark {
+                @include image-teaser-card-variant($brand-primary-dark, $brand-primary-dark, 0);
+            }
+            &.secondary {
+                @include image-teaser-card-variant($brand-success, $brand-success, 0);
+            }
+            &.white-no-border {
+                border-width: 0;
+                .card-block {
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+        .card-title {
+            margin-bottom: ($line-height-computed/2);
+            hyphens: auto;
+        }
+        .card-block {
+            padding: $grid-gutter-width;
+        }
+    }
+}
+
+
+

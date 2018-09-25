@@ -1,0 +1,36 @@
+{
+    "name": "derralf/elemental-image-teaser",
+    "description": "A content block to display teasers/promos for the silverstripe-elemental module",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "content blocks"
+    ],
+    "license": "BSD-3-Clause",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "dnadesign/silverstripe-elemental": "3.0.x-dev",
+        "silverstripe/vendor-plugin": "^1.0",
+        "sheadawson/silverstripe-linkable": "^2.0@dev",
+        "jonom/focuspoint": "^3.0"
+    },
+    "suggest": {
+        "derralf/elemental-styling": "Adds some styling options"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.x-dev"
+        },
+        "expose": [
+            "client/dist"
+        ]
+    },
+    "autoload": {
+        "psr-4": {
+            "Derralf\\Elements\\ImageTeaser\\": "src/"
+        }
+    }
+
+}

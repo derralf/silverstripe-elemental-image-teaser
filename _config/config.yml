@@ -1,0 +1,30 @@
+##---
+##Name: elementalimageteasers
+##---
+#
+#Derralf\Elements\ImageTeaser\Element\ElementImageTeaserHolder:
+#  # disable StyledTitle
+#  title_tag_variants: null
+#  title_alignment_variants: null
+#  # styles
+#  style_default_description: 'Standard: 2 Spalten'
+#  styles:
+#    ThreeColumns: '3 Spalten'
+#    RoundedImage: 'Runde Bilder, 2 Spalten'
+#
+#
+Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
+  title_tag_default: 'h2'
+#  title_tag_variants:
+#    '': 'default'
+#    h2 : 'H2'
+#    h3 : 'H3'
+#    h4 : 'H4'
+#  readmore_link_class: 'btn btn-primary btn-readmore'
+#  styles:
+#    default: 'default'
+#    grey: 'grau'
+#    primary: 'petrol'
+#    primary-dark: 'petrol dunkel'
+#    secondary: 'grün'
+#    white-no-border: 'weiß ohne outliner'
