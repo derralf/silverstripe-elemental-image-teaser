@@ -16,6 +16,10 @@
                 </{$TitleTagVariant}>
                 <% end_if %>
 
+                <% if $useSubtitle && $Subtitle %>
+                    <h3 class="card-subtitle">$Subtitle</h3>
+                <% end_if %>
+
                 <% if $Content %>
                     <div class="card-text">
                         $Content

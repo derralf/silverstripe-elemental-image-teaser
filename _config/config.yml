@@ -20,6 +20,7 @@ Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
 #    h2 : 'H2'
 #    h3 : 'H3'
 #    h4 : 'H4'
+#  use_subtitle: true
 #  readmore_link_class: 'btn btn-primary btn-readmore'
 #  styles:
 #    default: 'default'

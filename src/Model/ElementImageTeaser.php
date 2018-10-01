@@ -65,6 +65,8 @@ class ElementImageTeaser extends DataObject
         'ShowTitle' => true
     ];
 
+    private static $use_subtitle = false;
+
     private static $default_sort = 'Sort ASC';
 
     private static $field_labels = [
@@ -95,6 +97,11 @@ class ElementImageTeaser extends DataObject
 
             // Remove relationship fields
             $fields->removeByName('Sort');
+
+            // Subtitle
+            if (!$this->useSubtitle()) {
+                $fields->removeByName('Subtitle');
+            }
 
             // Add a combined field for "Title" and "Displayed" checkbox in a Bootstrap input group
             $fields->removeByName('ShowTitle');
@@ -160,6 +167,16 @@ class ElementImageTeaser extends DataObject
         return true;
     }
 
+
+    /**
+     * @return bool
+     */
+    public function useSubtitle()
+    {
+        if ($this->config()->get('use_subtitle')) {
+            return true;
+        }
+    }
 
     /**
      * @return string
