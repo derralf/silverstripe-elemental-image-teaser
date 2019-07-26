@@ -58,6 +58,8 @@ class ElementImageTeaserHolder extends BaseElement
         //'Teasers'
     ];
 
+    private static $inline_editable = false;
+
     private static $defaults = [
     ];
 
