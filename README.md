@@ -21,7 +21,7 @@ Modify `/templates/Derralf/Elements/ImageTeaser/Includes/Title.ss` to your needs
 
 - Install the module via Composer
   ```
-  composer require derralf/silverstripe-elemental-image-teaser
+  composer require derralf/elemental-image-teaser
   ```
 
 
