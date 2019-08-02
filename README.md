@@ -52,6 +52,10 @@ Derralf\Elements\ImageTeaser\Element\ElementImageTeaserHolder:
   styles:
     ThreeColumns: '3 Spalten'
     RoundedImage: 'Runde Bilder, 2 Spalten'
+    # bootstrap 4
+    ThreeColumnsBS4Cards: '3 Spalten (Bootstrap 4 Cards)'
+    FourColumnsBS4Cards: '4 Spalten (Bootstrap 4 Cards)'
+    RoundedImageBS4Cards: 'Runde Bilder, 2 Spalten (Bootstrap 4 Cards)'
 
 Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
   title_tag_default: 'h2'
