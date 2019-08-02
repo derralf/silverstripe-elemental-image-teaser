@@ -77,7 +77,10 @@ Additionally you may apply the default styles:
 # add default styles
 DNADesign\Elemental\Controllers\ElementController:
   default_styles:
+    # boptstrap 3 example styles
     - derralf/elemental-image-teaser:client/dist/styles/frontend-default.css
+    # boptstrap 4 example styles
+    - derralf/elemental-image-teaser:client/dist/styles/frontend-bootstrap-4-example.css
 ```
 
 See Elemental Docs for [how to disable the default styles](https://github.com/dnadesign/silverstripe-elemental#disabling-the-default-stylesheets).
