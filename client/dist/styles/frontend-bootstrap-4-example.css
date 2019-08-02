@@ -1,0 +1,31 @@
+@charset "UTF-8";
+/* ==========================================================================
+   derralf/elemental-image-teaser -> Bootstrap 4
+   ========================================================================== */
+/*
+
+Example Styles/Variants for:
+(elements.yml)
+
+Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
+  styles:
+    bg-primary: 'primary'
+    bg-secondary: 'secondary'
+    bg-light: 'hellgrau'
+    bg-white-no-padding: 'weiß, kein Rand'
+*/
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card .card-title a {
+  color: inherit; }
+
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-primary, .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-secondary {
+  color: #FFF; }
+
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-primary, .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-secondary, .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-light {
+  border: 0; }
+
+.derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-white-no-padding {
+  background: #FFF;
+  border: 0; }
+  .derralf__elements__imageteaser__element__elementimageteaserholder .teaser-list .card.bg-white-no-padding .card-body {
+    padding-left: 0;
+    padding-right: 0; }
