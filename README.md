@@ -5,10 +5,12 @@ A block that displays teaser objects (header, image, text, link). Usually 2 to 4
 
 ## Requirements
 
-* SilverStripe ^4.2
-* dnadesign/silverstripe-elemental ^3.0
+* SilverStripe CMS ^4.3
+* dnadesign/silverstripe-elemental ^4.0
 * sheadawson/silverstripe-linkable ^2.0@dev
 * jonom/focuspoint ^3.0
+
+For a SilverStripe 4.2 and Elemental 3.x compatible version of this module, please see the [1.x release line](https://github.com/derralf/silverstripe-elemental-image-teaser/tree/1.0#readme).
 
 
 ## Suggestions
@@ -21,7 +23,7 @@ Modify `/templates/Derralf/Elements/ImageTeaser/Includes/Title.ss` to your needs
 
 - Install the module via Composer
   ```
-  composer require derralf/silverstripe-elemental-image-teaser
+  composer require derralf/elemental-image-teaser
   ```
 
 
@@ -50,6 +52,10 @@ Derralf\Elements\ImageTeaser\Element\ElementImageTeaserHolder:
   styles:
     ThreeColumns: '3 Spalten'
     RoundedImage: 'Runde Bilder, 2 Spalten'
+    # bootstrap 4
+    ThreeColumnsBS4Cards: '3 Spalten (Bootstrap 4 Cards)'
+    FourColumnsBS4Cards: '4 Spalten (Bootstrap 4 Cards)'
+    RoundedImageBS4Cards: 'Runde Bilder, 2 Spalten (Bootstrap 4 Cards)'
 
 Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
   title_tag_default: 'h2'
@@ -75,7 +81,10 @@ Additionally you may apply the default styles:
 # add default styles
 DNADesign\Elemental\Controllers\ElementController:
   default_styles:
+    # boptstrap 3 example styles
     - derralf/elemental-image-teaser:client/dist/styles/frontend-default.css
+    # boptstrap 4 example styles
+    - derralf/elemental-image-teaser:client/dist/styles/frontend-bootstrap-4-example.css
 ```
 
 See Elemental Docs for [how to disable the default styles](https://github.com/dnadesign/silverstripe-elemental#disabling-the-default-stylesheets).

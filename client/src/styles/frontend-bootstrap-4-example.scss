@@ -1,0 +1,50 @@
+/* ==========================================================================
+   derralf/elemental-image-teaser -> Bootstrap 4
+   ========================================================================== */
+
+/*
+
+Example Styles/Variants for:
+(elements.yml)
+
+Derralf\Elements\ImageTeaser\Model\ElementImageTeaser:
+  styles:
+    bg-primary: 'primary'
+    bg-secondary: 'secondary'
+    bg-light: 'hellgrau'
+    bg-white-no-padding: 'weiß, kein Rand'
+*/
+
+.derralf__elements__imageteaser__element__elementimageteaserholder {
+  .teaser-list {
+    .card {
+      // inherit color for linked title
+      .card-title a {
+        color: inherit;
+      }
+
+      // set color
+      &.bg-primary,
+      &.bg-secondary {
+        color: #FFF;
+      }
+
+      // remove border
+      &.bg-primary,
+      &.bg-secondary,
+      &.bg-light {
+        border: 0;
+      }
+
+      // special without padding (left/right)
+      &.bg-white-no-padding {
+        background: #FFF;
+        border: 0;
+        .card-body {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+  }
+}

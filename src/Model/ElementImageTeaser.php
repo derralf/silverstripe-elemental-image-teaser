@@ -103,16 +103,27 @@ class ElementImageTeaser extends DataObject
                 $fields->removeByName('Subtitle');
             }
 
+            //// Add a combined field for "Title" and "Displayed" checkbox in a Bootstrap input group
+            //$fields->removeByName('ShowTitle');
+            //$fields->replaceField(
+            //    'Title',
+            //    TextCheckboxGroupField::create(
+            //        TextField::create('Title', _t(__CLASS__ . '.TitleLabel', 'Title (displayed if checked)')),
+            //        CheckboxField::create('ShowTitle', _t(__CLASS__ . '.ShowTitleLabel', 'Displayed'))
+            //    )
+            //        ->setName('TitleAndDisplayed')
+            //);
+
             // Add a combined field for "Title" and "Displayed" checkbox in a Bootstrap input group
             $fields->removeByName('ShowTitle');
             $fields->replaceField(
                 'Title',
-                TextCheckboxGroupField::create(
-                    TextField::create('Title', _t(__CLASS__ . '.TitleLabel', 'Title (displayed if checked)')),
-                    CheckboxField::create('ShowTitle', _t(__CLASS__ . '.ShowTitleLabel', 'Displayed'))
-                )
-                    ->setName('TitleAndDisplayed')
+                TextCheckboxGroupField::create()
+                    ->setName('Title')
             );
+
+
+
 
             // Title Tag
             $title_tags = $this->owner->getAvailableTitleTagVariants();
