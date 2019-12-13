@@ -138,7 +138,7 @@ class ElementImageTeaser extends DataObject
             $styles = $this->config()->get('styles');
             if ($styles && count($styles) > 0) {
                 $styleDropdown = DropdownField::create('Style', _t(__CLASS__.'.STYLE', 'Style variation'), $styles);
-                $fields->insertAfter('Subtitle',$styleDropdown);
+                $fields->insertBefore('Content',$styleDropdown);
                 $styleDropdown->setEmptyString(_t(__CLASS__.'.CUSTOM_STYLES', 'Select a style..'));
             } else {
                 $fields->removeByName('Style');
