@@ -159,9 +159,9 @@ class ElementImageTeaser extends DataObject
             // --------------------------------------------------------------------------------
             $Image = new UploadField('Image', 'Bild');
             $Image->setFolderName('element-teaser-image');
-            $Image->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png'));
+            $Image->getValidator()->setAllowedExtensions(array('jpg', 'jpeg', 'png', 'gif'));
             $Image->getValidator()->setAllowedMaxFileSize((2 * 1024 * 1024));  // 2MB
-            $Image->setDescription('Optional: Bild für Anzeige hinterlegen<br>Erlaubte Dateiformate: jpg, png<br>Erlaubte Dateigröße: max. 2MB<br>Bildgröße/Format: für das Vorschaubild wird automatisch ein Ausschnitt erstellt/errechnet (Format/seitenverhältnis durch Template festgelegt)<br>Bei Bedarf kann der Focus für das Vorschau-Bild gesetzt werden: Bild > Bearbeiten > Focus Point setzen > speichern<br>Achtung! Bild speichern und Datensatz speichern sind verschiedene Buttons/Funktionen');
+            $Image->setDescription('Optional: Bild für Anzeige hinterlegen<br>Erlaubte Dateiformate: jpg, png, gif<br>Erlaubte Dateigröße: max. 2MB<br>Bildgröße/Format: für das Vorschaubild wird automatisch ein Ausschnitt erstellt/errechnet (Format/seitenverhältnis durch Template festgelegt)<br>Bei Bedarf kann der Focus für das Vorschau-Bild gesetzt werden: Bild > Bearbeiten > Focus Point setzen > speichern<br>Achtung! Bild speichern und Datensatz speichern sind verschiedene Buttons/Funktionen');
             $fields->replaceField('Image', $Image);
 
 
